@@ -10,4 +10,6 @@
     <string name="name">Name</string>
     <string name="add_a_room">Add a room</string>
     <string name="view_rooms_list">View rooms list</string>
+    <string name="text_room_created">Room Created with id %s </string>
+    <string name="text_person_created">Person Created with id %s </string>
 </resources>

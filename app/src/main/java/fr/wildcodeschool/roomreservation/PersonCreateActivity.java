@@ -46,8 +46,9 @@ public class PersonCreateActivity extends AppCompatActivity {
         person.put(DBContract.PersonEntry.COLUMN_NAME_LASTNAME, lastname);
 
         long idPerson= myDatabase.insert(DBContract.PersonEntry.TABLE_NAME,null, person);
+        String result = String.format(getString(R.string.text_person_created), String.valueOf(idPerson));
 
-        Toast.makeText(this, String.valueOf(idPerson), Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, result, Toast.LENGTH_SHORT).show();
 
     }
 }
